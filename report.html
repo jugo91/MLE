@@ -11782,7 +11782,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Import libraries necessary for this project</span>
@@ -11837,7 +11837,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Display a description of the dataset</span>
@@ -11964,7 +11964,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># TODO: Select three indices of your choice you wish to sample from the dataset</span>
@@ -12092,7 +12092,7 @@ The thid customer with index 183 achieves upper 25%-quantile values for all cost
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># TODO: Make a copy of the DataFrame, using the &#39;drop&#39; function to drop the given feature</span>
@@ -12114,7 +12114,7 @@ The thid customer with index 183 achieves upper 25%-quantile values for all cost
     <span class="n">X_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">new_data</span><span class="p">,</span> <span class="n">new_y</span><span class="p">,</span> <span class="n">test_size</span><span class="o">=</span><span class="mf">0.25</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">324234</span><span class="p">)</span>
 
     <span class="c1"># TODO: Create a decision tree regressor and fit it to the training set</span>
-    <span class="n">regressor</span> <span class="o">=</span> <span class="n">tree</span><span class="o">.</span><span class="n">DecisionTreeRegressor</span><span class="p">(</span><span class="n">min_samples_split</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="n">criterion</span><span class="o">=</span><span class="s2">&quot;mse&quot;</span><span class="p">)</span>
+    <span class="n">regressor</span> <span class="o">=</span> <span class="n">tree</span><span class="o">.</span><span class="n">DecisionTreeRegressor</span><span class="p">(</span><span class="n">min_samples_split</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="n">criterion</span><span class="o">=</span><span class="s2">&quot;mse&quot;</span><span class="p">,</span><span class="n">random_state</span><span class="o">=</span><span class="mi">32229324</span><span class="p">)</span>
     <span class="n">regressor</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span><span class="n">y_train</span><span class="p">)</span>
 
     <span class="c1"># TODO: Report the score of the prediction using the testing set</span>
@@ -12134,17 +12134,17 @@ The thid customer with index 183 achieves upper 25%-quantile values for all cost
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Fresh
--0.618518805651
+-0.67080239387
 Milk
-0.137750893694
+0.120798436952
 Grocery
-0.624791218133
+0.611728727054
 Frozen
--0.788552164111
+-0.761059232855
 Detergents_Paper
-0.629854409877
+0.678583714372
 Delicatessen
--2.74102210201
+-2.8294426386
 </pre>
 </div>
 </div>
@@ -12169,7 +12169,7 @@ Delicatessen
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Answer: I attempt to predict Detergents_Paper. As it can be predicted with a high test score of 0.71 with the rest of the data left I assume this to be the least important feature to predict the customers' spending habits. As it cannot be perfectly predicted (which would be a R^2 of 1) still using this feature would lead to a slightly better identification of customers's spending habits.</strong></p>
+<p><strong>Answer: I attempt to predict Detergents_Paper. As it can be predicted with a high test score of 0.68 with the rest of the data left I assume this to be the least important feature to predict the customers' spending habits. As it cannot be perfectly predicted (which would be a R^2 of 1) still using this feature would lead to a slightly better identification of customers's spending habits.</strong></p>
 
 </div>
 </div>
@@ -12186,7 +12186,7 @@ Delicatessen
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Produce a scatter matrix for each pair of features in the data</span>
@@ -14871,7 +14871,7 @@ MzMzMzMzs7b8P6YbhZeIVDkmAAAAAElFTkSuQmCC
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># TODO: Scale the data using the natural logarithm</span>
@@ -20482,7 +20482,7 @@ QmCC
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Display the log-transformed sample data</span>
@@ -20573,7 +20573,7 @@ Once you have performed this implementation, the dataset will be stored in the v
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="k">print</span> <span class="n">log_data</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span>
@@ -20602,7 +20602,7 @@ Once you have performed this implementation, the dataset will be stored in the v
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># For each feature find the data points with extreme high or low values</span>
@@ -21299,12 +21299,54 @@ Data points considered outliers for the feature &#39;Delicatessen&#39;:
 </div>
 </div>
 </div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[28]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">outlier_cpy</span><span class="o">=</span><span class="nb">list</span><span class="p">(</span><span class="n">outliers</span><span class="p">)</span>
+<span class="n">outlier_count</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;odd&#39;</span><span class="p">:</span> <span class="mi">1</span> <span class="p">}</span>
+<span class="k">for</span> <span class="n">outlier</span> <span class="ow">in</span> <span class="n">outlier_cpy</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">outlier_count</span><span class="o">.</span><span class="n">has_key</span><span class="p">(</span><span class="n">outlier</span><span class="p">):</span>        
+        <span class="n">outlier_count</span><span class="p">[</span><span class="n">outlier</span><span class="p">]</span><span class="o">=</span><span class="n">outlier_count</span><span class="p">[</span><span class="n">outlier</span><span class="p">]</span><span class="o">+</span><span class="mi">1</span>        
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">outlier_count</span><span class="p">[</span><span class="n">outlier</span><span class="p">]</span><span class="o">=</span><span class="mi">1</span>
+    <span class="n">outlier_count</span><span class="p">[</span><span class="n">outlier</span><span class="p">]</span>
+<span class="k">for</span> <span class="n">keyname</span> <span class="ow">in</span> <span class="n">outlier_count</span><span class="o">.</span><span class="n">keys</span><span class="p">():</span>
+    <span class="k">if</span> <span class="n">outlier_count</span><span class="p">[</span><span class="n">keyname</span><span class="p">]</span><span class="o">&gt;</span><span class="mi">1</span><span class="p">:</span>
+        <span class="k">print</span> <span class="nb">str</span><span class="p">(</span><span class="n">keyname</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">outlier_count</span><span class="p">[</span><span class="n">keyname</span><span class="p">])</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>128: 2
+154: 3
+65: 2
+66: 2
+75: 2
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Answer: Yes, for example the index 66 and 154 is consideres as an outlier for more than one features. These data points should be removed from the data set. All points added to the outliers list were selected via the Turkey's method exempting certain points deviating from the heavily from the more 'median' 50 percent of data of the data set. </strong></p>
+<p><strong>Answer: Yes, the indices 128, 154, 65, 66 and 75 are considered as an outlier for more than one feature. These data points should be removed from the data set. All points added to the outliers list were selected via the Turkey's method exempting certain points deviating from the heavily from the more 'median' 50 percent of data of the data set. 
+Those keys were removed among all other outliers in the previous step.</strong></p>
 
 </div>
 </div>
@@ -21336,7 +21378,7 @@ Data points considered outliers for the feature &#39;Delicatessen&#39;:
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="prompt input_prompt">In&nbsp;[29]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># TODO: Apply PCA by fitting the good data with the same number of dimensions as features</span>
@@ -21998,7 +22040,8 @@ BFHSSEREREREREREgihpJCIiIiIiIiIiQf4PwPUhzfPLzyUAAAAASUVORK5CYII=
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Answer: 0.73 percent of the variance is explained by the first and second comopnent in total, 0.93 percent by the first four principal components. The first four components could represent customer buckets, e.g. the first component could represent a wholesale customer's bucket buying milk and groceries, the second a business customer producing ice cream and so on.</strong></p>
+<p>**Answer: 0.73 percent of the variance is explained by the first and second comopnent in total, 0.93 percent by the first four principal components. The first four components could represent customer buckets, e.g. the first component could represent a retail customer's bucket buying milk and groceries, the second a business customer producing ice cream and based on the postive weight of 'Delicatessen' it could represent cafes based on the correlation of the dimensions in the principal components.</p>
+<p>The third customer could represent a restaurant selling a high amount of fresh food based on the high weight of 'Fresh' and negative weight of 'Delicatessen'. The fourth principal component could represent ice cream ony-manufacturers as only 'Frozen' and 'Detergents Paper' have positive weight wheras all other components have negative weights.**</p>
 
 </div>
 </div>
@@ -22015,7 +22058,7 @@ BFHSSEREREREREREgihpJCIiIiIiIiIiQf4PwPUhzfPLzyUAAAAASUVORK5CYII=
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="prompt input_prompt">In&nbsp;[30]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Display sample log-data after having a PCA transformation applied</span>
@@ -22103,7 +22146,7 @@ BFHSSEREREREREREgihpJCIiIiIiIiIiQf4PwPUhzfPLzyUAAAAASUVORK5CYII=
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[16]:</div>
+<div class="prompt input_prompt">In&nbsp;[31]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># TODO: Apply PCA by fitting the good data with only two dimensions</span>
@@ -22138,7 +22181,7 @@ BFHSSEREREREREREgihpJCIiIiIiIiIiQf4PwPUhzfPLzyUAAAAASUVORK5CYII=
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[17]:</div>
+<div class="prompt input_prompt">In&nbsp;[32]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Display sample log-data after applying PCA transformation in two dimensions</span>
@@ -22205,7 +22248,7 @@ BFHSSEREREREREREgihpJCIiIiIiIiIiQf4PwPUhzfPLzyUAAAAASUVORK5CYII=
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[18]:</div>
+<div class="prompt input_prompt">In&nbsp;[33]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Create a biplot</span>
@@ -22220,11 +22263,11 @@ BFHSSEREREREREREgihpJCIiIiIiIiIiQf4PwPUhzfPLzyUAAAAASUVORK5CYII=
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[18]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[33]:</div>
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0xce0f470&gt;</pre>
+<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0xdf0a080&gt;</pre>
 </div>
 
 </div>
@@ -23874,7 +23917,7 @@ SZIk4P8AqpTmmWsNooAAAAAASUVORK5CYII=
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[43]:</div>
+<div class="prompt input_prompt">In&nbsp;[34]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># TODO: Apply your clustering algorithm of choice to the reduced data </span>
@@ -23926,7 +23969,7 @@ SZIk4P8AqpTmmWsNooAAAAAASUVORK5CYII=
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[49]:</div>
+<div class="prompt input_prompt">In&nbsp;[35]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="k">print</span> <span class="nb">list</span><span class="p">[</span><span class="o">-</span><span class="mi">5</span><span class="p">:</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
@@ -23983,7 +24026,7 @@ SZIk4P8AqpTmmWsNooAAAAAASUVORK5CYII=
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[50]:</div>
+<div class="prompt input_prompt">In&nbsp;[36]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Display the results of the clustering from implementation</span>
@@ -25120,7 +25163,7 @@ AAAAAAMjEAIAAAAYGIEQAAAAwMAIhAAAAAAGRiAEAAAAMDD/H+YB8riS3WmMAAAAAElFTkSuQmCC
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[51]:</div>
+<div class="prompt input_prompt">In&nbsp;[37]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># TODO: Inverse transform the centers</span>
@@ -25224,7 +25267,7 @@ AAAAAAMjEAIAAAAYGIEQAAAAwMAIhAAAAAAGRiAEAAAAMDD/H+YB8riS3WmMAAAAAElFTkSuQmCC
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[52]:</div>
+<div class="prompt input_prompt">In&nbsp;[38]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Display the predictions</span>
@@ -25338,7 +25381,7 @@ Sample point 2 predicted to be in Cluster 1
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[53]:</div>
+<div class="prompt input_prompt">In&nbsp;[39]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Display the clustering results based on &#39;Channel&#39; data</span>
@@ -26454,8 +26497,9 @@ AACAjhEIAQAAAHSMQAgAAACgYwRCAAAAAB3z/wG6KpKnvK0iPQAAAABJRU5ErkJggg==
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>**Answer: Visually my algorithm and the number of two clusters fit the underlying distribution of Hotel/Restaurant/Cafe to Retail customers quite well. There are obviously mismatches which would also happen doing it 'visually' or given the two dimensions. Given the plot the customer segements do not match purely 'Retailers' or 'Hotels/Restaurant/Cafes' but can be seen as represent majorly or most probably those. To underline this the Gaussian Mixture Model would also give probabilities for this.</p>
-<p>The classifications are quite consistent with the definition of the customers segements despite the fact that I considered those Hotel/Restaurant/Cafe customers as business customers.**</p>
+<p>**Answer: Visually my algorithm and the number of two clusters fit the underlying distribution of Hotel/Restaurant/Cafe to Retail customers quite well. The clusters shown above are divised by a vertical line this plot which means the division is only divised by dimension 1 which represents whether a customer is retail or not.
+There are obviously mismatches which would also happen doing it 'visually' or given the two dimensions. Given the plot the customer segements do not match purely 'Retailers' or 'Hotels/Restaurant/Cafes' but can be seen as represent majorly or most probably those. To underline this the Gaussian Mixture Model would also give probabilities for this.</p>
+<p>The classifications are quite consistent with the definition of the customers segements despite the fact that I considered those Hotel/Restaurant/Cafe customers as business customers. **</p>
 
 </div>
 </div>
